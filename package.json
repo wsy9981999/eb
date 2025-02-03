@@ -1,12 +1,19 @@
 {
-  "name": "eb",
-  "private": true,
-  "version": "0.0.0",
+  "name": "@wsy998/eb",
+  "version": "1.0.1",
+  "keywords": ["eventbus", "typescript"],
+  "description": "Event bus based on TS",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
+  },
+  "files": ["dist/"],
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/wsy9981999/eb",
+    "type": "git"
   },
   "types": "dist/main.d.ts",
   "main": "./dist/eb.js",
