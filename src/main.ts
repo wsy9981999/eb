@@ -1,8 +1,10 @@
 export interface ListenMap {
-    [I: string]: Set<(...arg: any[]) => void>
+    [I: string]: Set<(...arg: any[]) => void> | TransformSet<any[]>
 }
-
-export type Transform<T extends any[]> = Set<(...args: T) => void>
+// interface ListenMap {
+//     "d":TransformSet<number[]>
+// }
+export type TransformSet<T extends any[]> = Set<(...args: T) => void>
 
 
 type Args<T extends keyof ListenMap> = ListenMap[T] extends Set<infer U extends (...arg: any[]) => void> ? Parameters<U> : any[]
