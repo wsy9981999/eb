@@ -1,6 +1,6 @@
 {
   "name": "@wsy998/eb",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "keywords": ["eventbus", "typescript"],
   "description": "Event bus based on TS",
   "type": "module",
