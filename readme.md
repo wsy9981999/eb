@@ -11,11 +11,11 @@ or
 const {EventBus}=require("@wsy998/eb")
 ```
 ## 方法
-`on(EventName,callback)`: 监听`EventName`事件</br>
-`emit(EventName)`:触发`EventName`事件</br>
-`off(EventName,callback)`: 取消监听`EventName`事件的`callback`函数，当`callback`为空时，取消监听`EventName`事件的所有回调函数，当`EventName`为空时，取消监听所有事件的所有回调函数</br>
-`once(EventName)`：监听`EventName`事件一次</br>
-`create()`: 创建一个新的`EventBus`实例</br>
+`on(EventName,callback)`: 监听`EventName`事件  
+`emit(EventName)`:触发`EventName`事件  
+`off(EventName,callback)`: 取消监听`EventName`事件的`callback`函数，当`callback`为空时，取消监听`EventName`事件的所有回调函数，当`EventName`为空时，取消监听所有事件的所有回调函数  
+`once(EventName)`：监听`EventName`事件一次  
+`create()`: 创建一个新的`EventBus`实例  
 ## Typescript
 
 ```typescript 
