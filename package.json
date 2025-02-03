@@ -1,0 +1,25 @@
+{
+  "name": "eb",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "types": "dist/main.d.ts",
+  "main": "./dist/eb.js",
+  "exports": {
+    ".": {
+      "require": "./dist/eb.cjs",
+      "types": "./dist/main.d.ts",
+      "import": "./dist/eb.js"
+    }
+  },
+  "module": "./src/main.ts",
+  "devDependencies": {
+    "typescript": "~5.6.2",
+    "vite": "^6.0.5"
+  }
+}
