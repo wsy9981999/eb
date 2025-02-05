@@ -16,7 +16,7 @@
     "type": "git"
   },
   "types": "dist/main.d.ts",
-  "main": "./dist/eb.js",
+  "main": "./dist/eb.umd.cjs",
   "exports": {
     ".": {
       "require": "./dist/eb.cjs",
@@ -24,7 +24,7 @@
       "import": "./dist/eb.js"
     }
   },
-  "module": "./src/main.ts",
+  "module": "./dist/eb.js",
   "devDependencies": {
     "typescript": "~5.6.2",
     "vite": "^6.0.5"
